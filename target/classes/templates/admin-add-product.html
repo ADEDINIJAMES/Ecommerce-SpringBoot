@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title> Product Application </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" th:href="@{/formstyle.css}" />
+</head>
+<body>
+<div class="login-box">
+    <div class="row">
+        <nav class ="navbar">
+            <img src="/TumiStoreLogo2.png" alt="TumiStoreLogo2" width="500">
+            <ul>
+                <li><a href="/">Home</a> </li>
+                <li><a href="/user/sign-up">sign-Up</a> </li>
+                <li><a href="/user/login">Login</a> </li>
+                <li><a href="">Admin</a> </li>
+                <li><a href="">contact</a> </li>
+            </ul>
+        </nav>
+    </div>
+
+    <form method="post" action="/products/admin-add-prod" th:object="${products}">
+        <h4>  Register Products</h4>
+        <div class="user-box">
+            <label for=><span>Username</span></label>
+            <input type="text" th:field="*{name}" required>
+        </div>
+        <div class="user-box">
+            <label> <span>Quantity</span>
+                <input type="text" th:field="*{quantity}"  required>
+            </label>
+        </div>
+        <div class="user-box">
+            <label><span> Price</span>
+                <input type="text" th:field="*{price}" required>
+            </label>
+        </div>
+        <div class="user-box">
+            <label><span> CATEGORY</span>
+                <input type="text" th:field="*{category}" required>
+            </label>
+        </div>
+        <div class="user-box">
+            <label><span> IMAGEUrl</span>
+                <input type="text" th:field="*{img}" required>
+            </label>
+        </div>
+        <div class="user-box">
+        <button type="submit" >AddProduct
+        </button>
+    </div>
+    </form>
+</div>
+</body>
+<!--<script src="script.js"> </script>-->
+</html>

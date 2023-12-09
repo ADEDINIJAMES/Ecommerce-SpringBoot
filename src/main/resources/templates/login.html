@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title> Product Application </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" th:href="@{/formstyle.css}" />
+</head>
+<body>
+<div class="login-box">
+    <div class="row">
+        <nav class ="navbar">
+            <img src="/TumiStoreLogo2.png" alt="TumiStoreLogo2" width="500">
+            <ul>
+                <li><a href="/">Home</a> </li>
+                <li><a href="/user/sign-up">sign-Up</a> </li>
+                <li><a href="/user/login">Login</a> </li>
+                <li><a href="/user/admin-login">Admin</a> </li>
+                <li><a href="">contact</a> </li>
+            </ul>
+        </nav>
+    </div>
+
+    <form method="post" action="/user/login" th:object="${user}">
+        <h4>  Login </h4>
+        <div class="user-box">
+            <label for=><span>Username</span></label>
+            <input type="text" th:field="*{username}" required>
+        </div>
+        <div class="user-box">
+            <label><span> Password</span>
+                <input type="password" th:field="*{password}" required>
+            </label>
+        </div>
+        <div class="user-box">
+        <button type="submit" >Login
+        </button>
+    </div>
+        <div class="user-box"><span>no account ?</span><br>
+            <a href="/user/sign-up">Sign-Up </a>
+        </div>
+    </form>
+</div>
+</body>
+<!--<script src="script.js"> </script>-->
+</html>

@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title> Product Application </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" th:href="@{/table.css}" />
+</head>
+<body>
+<div class="login-box">
+    <div class="row">
+        <nav class ="navbar">
+            <img src="/TumiStoreLogo2.png" alt="TumiStoreLogo2" width="500">
+            <ul>
+                <li><a href="/">Home</a> </li>
+                <li><a href="/user/sign-up">sign-Up</a> </li>
+                <li><a href="/user/login">Login</a> </li>
+                <li><a href="">Admin</a> </li>
+                <li><a href="">contact</a> </li>
+            </ul>
+        </nav>
+    </div>
+    <table class="table1">
+
+        <thead>
+
+        <tr>
+            <th>
+                Status
+            </th>
+
+            <th>
+
+            </th>
+            <th>
+
+            </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>
+                <h1> <span>SIGN UP SUCCESSFUL</span></h1>
+                <h3><span>You can now LOGIN</span></h3>         </td>
+        </tr>
+        <tr>
+            <td> <button type="button">
+                <a href="/user/login">Login</a>
+            </button></td>
+        </tr>
+
+
+        </tbody>
+
+    </table>
+
+</div>
+</body>
+<!--<script src="script.js"> </script>-->
+</html>

@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Application(TumiStore) </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" th:href="@{/table.css}" /></head>
+<body>
+<div class="login-box">
+    <div class="row">
+        <nav class ="navbar">
+            <img src="/TumiStoreLogo2.png" alt="TumiStoreLogo2" width="500">
+            <ul>
+                <li><a href="/">Home</a> </li>
+                <li><a href="/user/sign-up">sign-Up</a> </li>
+                <li><a href="/user/logout">Logout</a> </li>
+                <li><a href="">Admin</a> </li>
+                <li><a href="">contact</a> </li>
+            </ul>
+        </nav>
+    </div>
+    <table class="table1">
+        <h2>
+            <span>Welcome to Product Dashboard</span></h2> <p th:text="${userID}"> </p>
+        <div class="cart"> <b th:text="${paid}"></b>
+        </div>
+        <thead>
+
+        <tr>
+            <th>
+Status
+            </th>
+
+            <th>
+
+            </th>
+            <th>
+
+            </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td>
+        <b th:text="${paid}"></b>
+        </td>
+        </tr>
+
+        </tbody>
+
+    </table>
+    <button type="button">
+        <a href="/products/all">Continue Shopping</a>
+    </button>
+</div>
+</body>
+<!--<script src="script.js"> </script>-->
+</html>

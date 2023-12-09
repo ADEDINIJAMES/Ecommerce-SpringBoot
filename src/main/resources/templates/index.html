@@ -1,0 +1,118 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en" xmlns:th="https://www.thymeleaf.org">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Product Application</title>-->
+<!--    <style>-->
+
+<!--    </style>-->
+<!--</head>-->
+
+<!--<body background="img/laptop-shopping-bags-online-shopping-concept.jpg">-->
+
+<!--<form>-->
+<!--    <div><button type="button"><a href="/user/sign-up">Sign Up</a></button></div>-->
+<!--</form>-->
+<!--</body>-->
+<!--</html>-->
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title> Product Application(TumiStore) </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" th:href="@{/style2.css}" />
+<!--    <style th:inline="text">-->
+
+<!--    body {-->
+<!--        margin: 0;-->
+<!--        padding: 0;-->
+<!--        font-family: 'Arial', sans-serif;-->
+<!--    }-->
+
+<!--    .container {-->
+<!--        width: 100%;-->
+<!--        height: 100vh;-->
+<!--        background: rgba(0, 0, 0, 0.65) url('[[@{img/Background.jpg}]]') no-repeat center/cover fixed;-->
+<!--        overflow: hidden;-->
+
+<!--    }-->
+
+<!--    .navbar {-->
+<!--        display: flex;-->
+<!--        justify-content: space-between;-->
+<!--        align-items: center;-->
+<!--        padding: 20px;-->
+<!--    }-->
+
+<!--    .navbar img {-->
+<!--        width: 100px;-->
+<!--    }-->
+
+<!--    .navbar ul {-->
+<!--        list-style: none;-->
+<!--        display: flex;-->
+<!--    }-->
+
+<!--    .navbar ul li {-->
+<!--        margin-right: 20px;-->
+<!--    }-->
+
+<!--    .content {-->
+<!--        text-align: center;-->
+<!--        position: absolute;-->
+<!--        top: 50%;-->
+<!--        left: 50%;-->
+<!--        transform: translate(-50%, -50%);-->
+<!--        color: #fff;-->
+<!--    }-->
+
+<!--    h1 {-->
+<!--        font-size: 3em;-->
+<!--        margin-bottom: 20px;-->
+<!--    }-->
+
+<!--    a {-->
+<!--        display: inline-block;-->
+<!--        padding: 10px 20px;-->
+<!--        color: #fff;-->
+<!--        text-decoration: none;-->
+<!--        border-radius: 5px;-->
+<!--    }-->
+
+<!--    a:hover {-->
+<!--        background-color: #2d88d5;-->
+<!--    }-->
+
+
+
+
+<!--</style>-->
+</head>
+<body>
+<div class ="container">
+    <div class="row">
+        <nav class ="navbar">
+            <img src="/TumiStoreLogo2.png" alt="TumiStoreLogo2" width="500">
+            <ul>
+                <li><a href="/">Home</a> </li>
+                <li><a href="/user/sign-up">sign-Up</a> </li>
+                <li><a href="/user/login">Login</a> </li>
+                <li><a href="/user/admin-login">Admin</a> </li>
+                <li><a href="">contact</a> </li>
+
+            </ul>
+        </nav>
+        <div class="content">
+            <h1>You are welcome TumiStore.</h1>
+            <p> Here we have a lot of packages for you ranging beautiful wears to jewelries for everyone. Just Sign-Up with us to join. We are here for you.</p>
+            <a href="/user/sign-up">Join for free</a>
+        </div>
+
+
+    </div>
+</div>
+</body>
+<!--<script src="script.js"> </script>-->
+</html>
